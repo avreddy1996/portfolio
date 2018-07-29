@@ -353,7 +353,7 @@ th:last-child, td:last-child {
  * -------------------------------------------------------------------
  */
 button, .button {
-	margin-bottom: 1.2;
+	margin-bottom: 1.2rem;
 }
 fieldset {
 	margin-bottom: 1.5rem;
@@ -1324,17 +1324,18 @@ header .logo a {
 	-ms-transform: translateY(-2.1rem);
 	transform: translateY(-2.1rem);
 }
-.intro-content h1 {
+.intro-content h1,
+.intro-content h2{
 	color: #FFFFFF;
 	font-family: "poppins-medium", sans-serif;
 	font-size: 8.4rem;
 	line-height: 1.071;
 	max-width: 900px;
-	margin-top: 0;
-	margin-bottom: .6rem;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto .6rem;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.intro-content h2{
+	font-size: 4.5rem;
 }
 .intro-content h5 {
 	color: #cc005f;
@@ -1504,8 +1505,8 @@ header .logo a {
 	margin-left: -30px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
+	height: 11rem;
+	width: 11rem;
 	border-radius: 50%;
 	margin: .9rem 0 0 0;
 	float: left;
@@ -1577,8 +1578,8 @@ header .logo a {
 }
 @media only screen and (max-width:768px) {
 	.intro-info img {
-		height: 7.8rem;
-		width: 7.8rem;
+		height: 9.8rem;
+		width: 9.8rem;
 	}
 	.intro-info .lead {
 		padding-left: 11rem;
@@ -1603,8 +1604,8 @@ header .logo a {
 		margin-top: 3rem;
 	}
 	.intro-info img {
-		height: 6.6rem;
-		width: 6.6rem;
+		height: 7.6rem;
+		width: 7.6rem;
 		float: none;
 		display: inline-block;
 	}
