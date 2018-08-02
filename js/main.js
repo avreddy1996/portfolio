@@ -150,13 +150,13 @@
 	});
 
    // nav items
-  	nav.find('li a').on("click", function() {   
-
-   	// update the toggle button 		
-   	toggleButton.toggleClass('is-clicked'); 
-   	// fadeout the navigation panel
-   	nav.fadeOut();   		
-   	     
+  	nav.find('li a').on("click", function() {
+		if(window.innerWidth<=600) {
+            // update the toggle button
+            toggleButton.toggleClass('is-clicked');
+            // fadeout the navigation panel
+            nav.fadeOut();
+        }
   	});
 
 
@@ -284,7 +284,16 @@
 				jQuery("#go-top").fadeOut(fadeOutTime);
 			}
 
-		}		
+		}
+		if(window.innerWidth>=600) {
+            if (jQuery(window).scrollTop() >= 200) {
+                $('.top-bar')[0].style.background = '#000';
+                $('.main-navigation')[0].style.background = '#000';
+            } else {
+                $('.top-bar')[0].style.background = 'none';
+                $('.main-navigation')[0].style.background = 'none';
+            }
+        }
 
 	});		
 
